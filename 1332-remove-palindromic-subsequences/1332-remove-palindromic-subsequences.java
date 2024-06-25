@@ -7,11 +7,11 @@ class Solution {
 
         while( i < j){
             if(s.charAt(i) != s.charAt(j)){
-                count++;
+               return 2;
             }
             i++; j--;
         }
 
-        return count+1;
+        return 1;
     }
 }
