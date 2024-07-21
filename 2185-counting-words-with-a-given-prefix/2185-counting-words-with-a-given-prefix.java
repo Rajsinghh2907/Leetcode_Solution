@@ -3,19 +3,29 @@ class Solution {
         
         int count = 0;
 
-        for(int i = 0; i<words.length; i++){
-            String s = words[i];
+        //BRUTE FORCE TIME COMPLEXITY IS O(N^2)
 
-            StringBuilder sb = new StringBuilder();
+        // for(int i = 0; i<words.length; i++){
+        //     String s = words[i];
 
-            for(int j = 0; j<s.length(); j++){
-                char ch = s.charAt(j);
-                sb.append(ch);
+        //     StringBuilder sb = new StringBuilder();
 
-                if(sb.toString().equals(pref)){
-                    count++;
-                    break;
-                }
+        //     for(int j = 0; j<s.length(); j++){
+        //         char ch = s.charAt(j);
+        //         sb.append(ch);
+
+        //         if(sb.toString().equals(pref)){
+        //             count++;
+        //             break;
+        //         }
+        //     }
+        // }
+
+        // return count;
+
+         for (String word : words) {
+            if (word.startsWith(pref)) {
+                count++;
             }
         }
 
