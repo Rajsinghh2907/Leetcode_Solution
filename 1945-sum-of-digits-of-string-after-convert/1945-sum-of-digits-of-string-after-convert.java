@@ -4,7 +4,7 @@ class Solution {
         StringBuilder numStr = new StringBuilder();
 
         for (char c : s.toCharArray()) {
-            numStr.append(c - 'a' + 1);
+            numStr.append(c - 'a' + 1); 
             // The given string s is converted into a numerical string where each 
             // character c is replaced by its position in the alphabet 
             // (i.e., 'a' -> 1, 'b' -> 2, ..., 'z' -> 26).
@@ -13,7 +13,7 @@ class Solution {
         int sum = 0;
 
         for(char ch : numStr.toString().toCharArray()){
-            sum += ch - '0';
+            sum += ch - '0'; // Used to convert character to number value
         }
 
         for(int i = 1; i<k; i++){
