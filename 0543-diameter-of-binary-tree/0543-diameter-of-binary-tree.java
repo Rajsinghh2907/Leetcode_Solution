@@ -20,7 +20,7 @@ class Solution {
             return 0;
         }
 
-        int leftDiam = diameterOfBinaryTree(root.left);
+        int leftDiam = diameterOfBinaryTree(root.left); // recursively calculate leftDiam
         int leftHt = height(root.left);
         int rightDiam = diameterOfBinaryTree(root.right);
         int rightHt = height(root.right);
